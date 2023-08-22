@@ -16,9 +16,11 @@
 
 <div class="grid grid-rows-[auto_1fr_auto] min-h-screen bg-[#161923] text-white">
 	<header class="flex justify-around my-8 items-center">
-		<h1 class="font-bold text-xl xs:text-2xl sm:text-3xl md:text-4xl mx-4 xs:mx-8">
-			Aditya Banerjee
-		</h1>
+		<a href="/">
+			<h1 class="font-bold text-xl xs:text-2xl sm:text-3xl md:text-4xl mx-4 xs:mx-8">
+				Aditya Banerjee
+			</h1>
+		</a>
 		<nav class="hidden lg:flex mx-24 gap-16 text-lg">
 			<a href="/about">About</a>
 			<a href="/resume">Resume</a>
