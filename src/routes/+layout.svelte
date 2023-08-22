@@ -31,19 +31,19 @@
 	</header>
 	<slot />
 	<footer class="flex justify-around my-8">
-		<div class="sm:w-[80px] md:w-[60px] w-[40px]">
+		<div class="sm:w-[60px] md:w-[80px] w-[40px]">
 			<a href={github_url} target="_blank"><img src={Github} alt="Github Logo" /></a>
 		</div>
-		<div class="sm:w-[80px] md:w-[60px] w-[40px]">
+		<div class="sm:w-[60px] md:w-[80px] w-[40px]">
 			<a href={linkedin_url} target="_blank"><img src={Linkedin} alt="Linkedin Logo" /></a>
 		</div>
-		<div class="sm:w-[80px] md:w-[60px] w-[40px]">
+		<div class="sm:w-[60px] md:w-[80px] w-[40px]">
 			<a href={gmail_url} target="_blank"><img src={Gmail} alt="Gmail Logo" /></a>
 		</div>
-		<div class="sm:w-[80px] md:w-[60px] w-[40px]">
+		<div class="sm:w-[60px] md:w-[80px] w-[40px]">
 			<a href={facebook_url} target="_blank"><img src={Facebook} alt="Facebook Logo" /></a>
 		</div>
-		<div class="sm:w-[80px] md:w-[60px] w-[40px]">
+		<div class="sm:w-[60px] md:w-[80px] w-[40px]">
 			<a href={instagram_url} target="_blank"><img src={Instagram} alt="Instagram Logo" /></a>
 		</div>
 	</footer>
