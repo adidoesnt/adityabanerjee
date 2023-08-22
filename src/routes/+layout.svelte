@@ -7,11 +7,18 @@
 	import Facebook from '../icons/Facebook.svg';
 	import DarkMode from '../icons/DarkMode.svg';
 	import Hamburger from '../icons/Hamburger.svg';
+	const github_url = import.meta.env.VITE_GITHUB_URL;
+	const gmail_url = import.meta.env.VITE_GMAIL_URL;
+	const instagram_url = import.meta.env.VITE_INSTAGRAM_URL;
+	const facebook_url = import.meta.env.VITE_FACEBOOK_URL;
+	const linkedin_url = import.meta.env.VITE_LINKEDIN_URL;
 </script>
 
 <div class="grid grid-rows-[auto_1fr_auto] min-h-screen bg-[#161923] text-white">
 	<header class="flex justify-around my-8 items-center">
-		<h1 class="font-bold text-xl xs:text-2xl sm:text-3xl md:text-4xl mx-4 xs:mx-8">Aditya Banerjee</h1>
+		<h1 class="font-bold text-xl xs:text-2xl sm:text-3xl md:text-4xl mx-4 xs:mx-8">
+			Aditya Banerjee
+		</h1>
 		<nav class="hidden lg:flex mx-24 gap-16 text-lg">
 			<a href="/about">About</a>
 			<a href="/resume">Resume</a>
@@ -24,10 +31,20 @@
 	</header>
 	<slot />
 	<footer class="flex justify-around my-8">
-		<div class="sm:w-[80px] md:w-[60px] w-[40px]"><img src={Github} alt="Github Logo" /></div>
-		<div class="sm:w-[80px] md:w-[60px] w-[40px]"><img src={Linkedin} alt="Linkedin Logo" /></div>
-		<div class="sm:w-[80px] md:w-[60px] w-[40px]"><img src={Gmail} alt="Gmail Logo" /></div>
-		<div class="sm:w-[80px] md:w-[60px] w-[40px]"><img src={Facebook} alt="Facebook Logo" /></div>
-		<div class="sm:w-[80px] md:w-[60px] w-[40px]"><img src={Instagram} alt="Instagram Logo" /></div>
+		<div class="sm:w-[80px] md:w-[60px] w-[40px]">
+			<a href={github_url} target="_blank"><img src={Github} alt="Github Logo" /></a>
+		</div>
+		<div class="sm:w-[80px] md:w-[60px] w-[40px]">
+			<a href={linkedin_url} target="_blank"><img src={Linkedin} alt="Linkedin Logo" /></a>
+		</div>
+		<div class="sm:w-[80px] md:w-[60px] w-[40px]">
+			<a href={gmail_url} target="_blank"><img src={Gmail} alt="Gmail Logo" /></a>
+		</div>
+		<div class="sm:w-[80px] md:w-[60px] w-[40px]">
+			<a href={facebook_url} target="_blank"><img src={Facebook} alt="Facebook Logo" /></a>
+		</div>
+		<div class="sm:w-[80px] md:w-[60px] w-[40px]">
+			<a href={instagram_url} target="_blank"><img src={Instagram} alt="Instagram Logo" /></a>
+		</div>
 	</footer>
 </div>
