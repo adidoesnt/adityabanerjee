@@ -1,4 +1,4 @@
-<div class="flex flex-col">
-	<h1>Welcome to SvelteKit</h1>
-	<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="flex flex-col max-w-[90%] m-auto">
+	<h1>Home Page</h1>
+	<p>This is a work in progess.</p>
 </div>
