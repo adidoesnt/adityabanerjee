@@ -3,7 +3,7 @@
 		<h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">About Me</h1>
 		<hr class="border border-white w-24" />
 		<p
-			class="text-sm md:text-base lg:text-xl font-normal max-w-[85%] max-h-[57.5vh] overflow-y-auto text-left px-2"
+			class="text-sm md:text-base lg:text-xl font-normal max-w-[85%] max-h-[57.5vh] lg:max-h-[50vh] overflow-y-auto text-left px-2"
 		>
 			Hi! My name is Aditya Banerjee, and I'm a software developer and fresh graduate from the
 			National University of Singapore. I specialise primarily in frontend development, however I
