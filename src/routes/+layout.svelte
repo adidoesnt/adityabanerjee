@@ -1,4 +1,5 @@
 <script>
+	import { QueryClient, QueryClientProvider } from '@sveltestack/svelte-query';
 	import '../app.css';
 	import Github from '../icons/Github.svg';
 	import Linkedin from '../icons/Linkedin.svg';
@@ -12,6 +13,7 @@
 	const instagram_url = import.meta.env.VITE_INSTAGRAM_URL;
 	const facebook_url = import.meta.env.VITE_FACEBOOK_URL;
 	const linkedin_url = import.meta.env.VITE_LINKEDIN_URL;
+	const queryClient = new QueryClient();
 </script>
 
 <div class="grid grid-rows-[auto_1fr_auto] min-h-screen bg-[#161923] text-white">
@@ -31,7 +33,9 @@
 		<div><img class="mx-8" src={DarkMode} alt={'Dark mode toggle'} /></div>
 		<div class="lg:hidden"><img class="mx-8" src={Hamburger} alt={'Hamburger menu'} /></div>
 	</header>
-	<slot />
+	<QueryClientProvider client={queryClient}>
+		<slot />
+	</QueryClientProvider>
 	<footer class="flex justify-around my-8">
 		<div class="sm:w-[60px] md:w-[80px] w-[40px]">
 			<a href={github_url} target="_blank"><img src={Github} alt="Github Logo" /></a>

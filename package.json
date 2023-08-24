@@ -32,6 +32,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltestack/svelte-query": "^1.6.0",
 		"axios": "^1.4.0"
 	}
 }
