@@ -1,3 +1,3 @@
 <div class="m-auto">
-    <h1 class="font-bold text-xl">No posts yet!</h1>
+    <h1 class="text-xl">Coming soon!</h1>
 </div>
