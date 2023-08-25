@@ -32,7 +32,7 @@
 			<a href="/blog">Blog</a>
 			<a href="/acknowledgements">Acknowledgements</a>
 		</nav>
-		<button on:click={toggleDarkMode}>
+		<button on:click={toggleDarkMode} class="hidden">
 			<img
 				class="mx-8 dark:drop-shadow-[10_0_30_#F4FFB0]"
 				src={DarkMode}

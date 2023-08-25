@@ -1,6 +1,9 @@
 <div class="flex flex-col items-center justify-center">
-	<div id="desktop" class="flex flex-col text-center gap-8">
-		<section id="education" class="flex flex-col items-center gap-4">
+	<div
+		id="desktop"
+		class="flex flex-col text-center gap-8 max-w-[95%] max-h-[57.5vh] lg:max-h-[55vh] overflow-y-auto overflow-x-clip p-4"
+	>
+		<section id="education" class="flex flex-col items-center gap-4 min-h-full">
 			<h2 class="text-2xl md:text-3xl lg:text-4xl font-bold">Education</h2>
 			<hr class="border border-white w-24" />
 			<div>
@@ -150,7 +153,7 @@
 		<section class="flex flex-col items-center gap-4" id="skills">
 			<h2 class="text-2xl md:text-3xl lg:text-4xl font-bold">Skills</h2>
 			<hr class="border border-white w-24" />
-			<div id="skills-grid-desktop" class="flex flex-col gap-4">
+			<div id="skills-grid-mobile" class="tallscreen:flex flex-col gap-4 hidden">
 				<div id="backend">
 					<h3 class="font-bold">Backend</h3>
 					<p class="font-extralight">Node.js (Proficient)</p>
@@ -233,6 +236,99 @@
 					<p class="font-extralight">MacOS (Proficient)</p>
 					<p class="font-extralight">Linux - RPM-Based/Debian (Proficient)</p>
 					<p class="font-extralight">Windows - Intermediate</p>
+				</div>
+			</div>
+			<div id="skills-grid-desktop" class="flex gap-16 tallscreen:hidden">
+				<div id="col1" class="flex flex-col gap-4">
+					<div id="backend">
+						<h3 class="font-bold">Backend</h3>
+						<p class="font-extralight">Node.js (Proficient)</p>
+					</div>
+					<div id="query">
+						<h3 class="font-bold">Query</h3>
+						<p class="font-extralight">GraphQL (Intermediate)</p>
+					</div>
+					<div id="frotend">
+						<h3 class="font-bold">Frontend</h3>
+						<p class="font-extralight">ReactJS (Proficient)</p>
+						<p class="font-extralight">React Native (Proficient)</p>
+						<p class="font-extralight">NextJS (Proficient)</p>
+						<p class="font-extralight">Svelte (Proficient)</p>
+						<p class="font-extralight">SvelteKit (Proficient)</p>
+						<p class="font-extralight">HTML (Proficient)</p>
+						<p class="font-extralight">CSS (Proficient)</p>
+						<p class="font-extralight">Tailwind (Proficient)</p>
+					</div>
+					<div id="orm">
+						<h3 class="font-bold">Query</h3>
+						<p class="font-extralight">Mongoose (Proficient)</p>
+						<p class="font-extralight">Prisma (Intermediate)</p>
+					</div>
+				</div>
+				<div id="col2" class="flex flex-col gap-4">
+					<div id="testing">
+						<h3 class="font-bold">Testing</h3>
+						<p class="font-extralight">Jest (Proficient)</p>
+						<p class="font-extralight">Supertest (Intermediate)</p>
+						<p class="font-extralight">Mocha (Intermediate)</p>
+						<p class="font-extralight">Chai (Intermediate)</p>
+						<p class="font-extralight">JUnit (Proficient)</p>
+						<p class="font-extralight">Mockito (Proficient)</p>
+						<p class="font-extralight">Catch2 (Intermediate)</p>
+					</div>
+					<div id="integration">
+						<h3 class="font-bold">Integration</h3>
+						<p class="font-extralight">GitHub Actions (Proficient)</p>
+						<p class="font-extralight">Travis CI (Intermediate)</p>
+					</div>
+					<div id="deployment">
+						<h3 class="font-bold">Deployment</h3>
+						<p class="font-extralight">Heroku (Proficient)</p>
+					</div>
+					<div id="containerisation">
+						<h3 class="font-bold">Containerisation</h3>
+						<p class="font-extralight">Docker(Proficient)</p>
+						<p class="font-extralight">Kubernetes (Intermediate)</p>
+					</div>
+				</div>
+				<div id="col3" class="flex flex-col gap-4">
+					<div id="caching">
+						<h3 class="font-bold">Caching</h3>
+						<p class="font-extralight">Redis (Intermediate)</p>
+					</div>
+					<div id="languages">
+						<h3 class="font-bold">Languages</h3>
+						<p class="font-extralight">JavaScript (Proficient)</p>
+						<p class="font-extralight">Java (Proficient)</p>
+						<p class="font-extralight">C++ (Proficient)</p>
+						<p class="font-extralight">Python (Proficient)</p>
+						<p class="font-extralight">C (Intermediate)</p>
+					</div>
+					<div id="vc">
+						<h3 class="font-bold">Version Control</h3>
+						<p class="font-extralight">Git (Proficient)</p>
+					</div>
+					<div id="pm">
+						<h3 class="font-bold">Project Management</h3>
+						<p class="font-extralight">GitHub Issues (Proficient)</p>
+						<p class="font-extralight">Monday.com (Proficient)</p>
+						<p class="font-extralight">Trello (Proficient)</p>
+						<p class="font-extralight">Notion (Proficient)</p>
+						<p class="font-extralight">ClickUp (Proficient)</p>
+						<p class="font-extralight">Jira (Intermediate)</p>
+					</div>
+				</div>
+				<div id="col4" class="flex flex-col gap-4">
+					<div id="op">
+						<h3 class="font-bold">Office Productivity</h3>
+						<p class="font-extralight">Microsoft Office (Proficient)</p>
+					</div>
+					<div id="os">
+						<h3 class="font-bold">Operating Systems</h3>
+						<p class="font-extralight">MacOS (Proficient)</p>
+						<p class="font-extralight">Linux - RPM-Based/Debian (Proficient)</p>
+						<p class="font-extralight">Windows - Intermediate</p>
+					</div>
 				</div>
 			</div>
 		</section>

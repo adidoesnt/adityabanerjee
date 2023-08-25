@@ -9,7 +9,7 @@ export default {
 				md: '768px',
 				lg: '1240px',
 				widescreen: { raw: '(min-aspect-ratio: 10/8)' },
-				tallscreen: { raw: '(max-aspect-ratio: 13/20)' }
+				tallscreen: { raw: '(max-aspect-ratio: 3/4)' }
 			}
 		}
 	},
