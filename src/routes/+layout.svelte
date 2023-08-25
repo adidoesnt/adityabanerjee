@@ -1,5 +1,6 @@
 <script defer>
 	import { QueryClient, QueryClientProvider } from '@sveltestack/svelte-query';
+	import { base } from '$app/paths';
 	import '../app.css';
 	import Github from '../icons/Github.svg';
 	import Linkedin from '../icons/Linkedin.svg';
@@ -25,17 +26,17 @@
 
 <div id="main" class="grid grid-rows-[auto_1fr_auto] min-h-screen bg-[#161923] text-white">
 	<header class="flex justify-around my-8 items-center">
-		<a href="/">
+		<a href="{base}/">
 			<h1 class="font-bold text-xl xs:text-2xl sm:text-3xl md:text-4xl mx-4 xs:mx-8">
 				Aditya Banerjee
 			</h1>
 		</a>
 		<nav class="hidden lg:flex mx-24 gap-16 text-lg">
-			<a href="/about">About</a>
-			<a href="/resume">Resume</a>
-			<a href="/projects">Projects</a>
-			<a href="/blog">Blog</a>
-			<a href="/acknowledgements">Acknowledgements</a>
+			<a href="{base}/about">About</a>
+			<a href="{base}/resume">Resume</a>
+			<a href="{base}/projects">Projects</a>
+			<a href="{base}/blog">Blog</a>
+			<a href="{base}/acknowledgements">Acknowledgements</a>
 		</nav>
 		<button on:click={toggleDarkMode} class="hidden">
 			<img
@@ -54,12 +55,12 @@
 			<button class="absolute right-0 top-0 m-10" on:click={toggleHamburger}>Close</button>
 			<button on:click={toggleHamburger}>
 				<nav class="flex flex-col gap-2">
-					<a class="text-2xl font-semibold" href="/">Home</a>
-					<a class="text-2xl font-semibold" href="/about">About</a>
-					<a class="text-2xl font-semibold" href="/resume">Resume</a>
-					<a class="text-2xl font-semibold" href="/projects">Projects</a>
-					<a class="text-2xl font-semibold" href="/blog">Blog</a>
-					<a class="text-2xl font-semibold" href="/acknowledgements">Acknowledgements</a>
+					<a class="text-2xl font-semibold" href="{base}/">Home</a>
+					<a class="text-2xl font-semibold" href="{base}/about">About</a>
+					<a class="text-2xl font-semibold" href="{base}/resume">Resume</a>
+					<a class="text-2xl font-semibold" href="{base}/projects">Projects</a>
+					<a class="text-2xl font-semibold" href="{base}/blog">Blog</a>
+					<a class="text-2xl font-semibold" href="{base}/acknowledgements">Acknowledgements</a>
 				</nav></button
 			>
 		</div>
