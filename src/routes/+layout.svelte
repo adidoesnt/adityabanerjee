@@ -1,4 +1,4 @@
-<script>
+<script defer>
 	import { QueryClient, QueryClientProvider } from '@sveltestack/svelte-query';
 	import '../app.css';
 	import Github from '../icons/Github.svg';
@@ -14,9 +14,11 @@
 	const facebook_url = import.meta.env.VITE_FACEBOOK_URL;
 	const linkedin_url = import.meta.env.VITE_LINKEDIN_URL;
 	const queryClient = new QueryClient();
+
+	const toggleDarkMode = () => {};
 </script>
 
-<div class="grid grid-rows-[auto_1fr_auto] min-h-screen bg-[#161923] text-white">
+<div id="main" class="grid grid-rows-[auto_1fr_auto] min-h-screen bg-[#161923] text-white">
 	<header class="flex justify-around my-8 items-center">
 		<a href="/">
 			<h1 class="font-bold text-xl xs:text-2xl sm:text-3xl md:text-4xl mx-4 xs:mx-8">
@@ -30,7 +32,13 @@
 			<a href="/blog">Blog</a>
 			<a href="/acknowledgements">Acknowledgements</a>
 		</nav>
-		<div><img class="mx-8" src={DarkMode} alt={'Dark mode toggle'} /></div>
+		<button on:click={toggleDarkMode}>
+			<img
+				class="mx-8 dark:drop-shadow-[10_0_30_#F4FFB0]"
+				src={DarkMode}
+				alt={'Dark mode toggle'}
+			/>
+		</button>
 		<div class="lg:hidden"><img class="mx-8" src={Hamburger} alt={'Hamburger menu'} /></div>
 	</header>
 	<QueryClientProvider client={queryClient}>
